@@ -1,1 +1,11 @@
 # This file contains recursive sources that require this package
+R-bayesplot
+R-brms
+R-broom
+R-caret
+R-modelr
+R-recipes
+R-rstan
+R-rstanarm
+R-shinystan
+R-tidyverse
