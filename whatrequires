@@ -3,3 +3,4 @@ R-RcppEigen
 R-nloptr
 R-rstan
 R-rstanarm
+R-shinystan
