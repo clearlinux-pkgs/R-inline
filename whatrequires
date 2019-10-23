@@ -1,6 +1,3 @@
 # This file contains recursive sources that require this package
-R-RcppEigen
 R-nloptr
 R-rstan
-R-rstanarm
-R-shinystan
