@@ -4,7 +4,7 @@
 #
 Name     : R-inline
 Version  : 0.3.15
-Release  : 25
+Release  : 26
 URL      : https://cran.r-project.org/src/contrib/inline_0.3.15.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/inline_0.3.15.tar.gz
 Summary  : Functions to Inline C, C++, Fortran Function Calls from R
