@@ -4,36 +4,36 @@
 #
 Name     : R-inline
 Version  : 0.3.15
-Release  : 26
+Release  : 27
 URL      : https://cran.r-project.org/src/contrib/inline_0.3.15.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/inline_0.3.15.tar.gz
 Summary  : Functions to Inline C, C++, Fortran Function Calls from R
 Group    : Development/Tools
 License  : LGPL-2.1
 BuildRequires : buildreq-R
-BuildRequires : util-linux
 
 %description
-## Inline C, C++ or Fortran calls in R
-[![Build Status](https://travis-ci.org/eddelbuettel/inline.png)](https://travis-ci.org/eddelbuettel/inline)
+with 'inlined' C, C++ or Fortran code supporting the .C and .Call calling
+ conventions.
 
 %prep
 %setup -q -c -n inline
+cd %{_builddir}/inline
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1571847688
+export SOURCE_DATE_EPOCH=1589512113
 
 %install
-export SOURCE_DATE_EPOCH=1571847688
+export SOURCE_DATE_EPOCH=1589512113
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib

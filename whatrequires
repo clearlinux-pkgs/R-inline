@@ -1,3 +1,3 @@
 # This file contains recursive sources that require this package
-R-nloptr
+R-BMA
 R-rstan
