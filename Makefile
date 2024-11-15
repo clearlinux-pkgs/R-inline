@@ -1,5 +1,5 @@
 PKG_NAME := R-inline
-URL = https://cran.r-project.org/src/contrib/inline_0.3.19.tar.gz
+URL = https://ftp.osuosl.org/pub/cran/src/contrib/inline_0.3.20.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
